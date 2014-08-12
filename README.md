@@ -1,6 +1,15 @@
 # MainFrameStatus
 Disclaimer: this application is still under construction!
 
+## About
+This is a small iOS application that will show the status of a hackspace. You can choose from a list of hackspaces that supoort [SpaceApi](https://github.com/spaceapi). The main focus is to show the status: 
+
+- O is for Open
+- C is for Closed
+- X is for Unknown state (no connection) 
+
+This application is written int the swift programming language and is attended to be a test project. 
+
 # License
 
 Copyright (c) 2014 Markus Müller GrafixMafia.Net
