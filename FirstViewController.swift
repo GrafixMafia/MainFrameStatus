@@ -10,9 +10,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
                             
+    @IBOutlet weak var status: UILabel!
+    
+    var statusHandler : StatusHandler = StatusHandler()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        status.text = statusHandler.getStatus()
     }
 
     override func didReceiveMemoryWarning() {
