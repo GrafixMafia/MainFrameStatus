@@ -10,6 +10,16 @@ This is a small iOS application that will show the status of a hackspace. You ca
 
 This application is written int the swift programming language and is attended to be a test project. 
 
+# Todo 
+
+- design settings view
+- design details view
+- design about view
+- handle state
+- backround updates
+- pull to refresh
+- push notification service
+
 # License
 
 Copyright (c) 2014 Markus Müller GrafixMafia.Net
