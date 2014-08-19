@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		280E2AA6199A9C5000D8E93A /* StatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E2AA5199A9C5000D8E93A /* StatusHandler.swift */; };
+		281AA7D019A374BF001FC3BF /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C119A374BF001FC3BF /* Icon-72.png */; };
+		281AA7D119A374BF001FC3BF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C219A374BF001FC3BF /* Icon-72@2x.png */; };
+		281AA7D219A374BF001FC3BF /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C319A374BF001FC3BF /* Icon-76.png */; };
+		281AA7D319A374BF001FC3BF /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C419A374BF001FC3BF /* Icon-76@2x.png */; };
+		281AA7D419A374BF001FC3BF /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C519A374BF001FC3BF /* Icon-120.png */; };
+		281AA7D519A374BF001FC3BF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C619A374BF001FC3BF /* Icon-iPad-Spotlight-iOS7@2x.png */; };
+		281AA7D619A374BF001FC3BF /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C719A374BF001FC3BF /* Icon-Small-50.png */; };
+		281AA7D719A374BF001FC3BF /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C819A374BF001FC3BF /* Icon-Small.png */; };
+		281AA7D819A374BF001FC3BF /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7C919A374BF001FC3BF /* Icon-Small@2x.png */; };
+		281AA7D919A374BF001FC3BF /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7CA19A374BF001FC3BF /* Icon-Spotlight-iOS7.png */; };
+		281AA7DA19A374BF001FC3BF /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7CB19A374BF001FC3BF /* Icon-Spotlight-iOS7@2x.png */; };
+		281AA7DB19A374BF001FC3BF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7CC19A374BF001FC3BF /* Icon.png */; };
+		281AA7DC19A374BF001FC3BF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7CD19A374BF001FC3BF /* Icon@2x.png */; };
+		281AA7E119A37600001FC3BF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7DF19A37600001FC3BF /* iTunesArtwork.png */; };
+		281AA7E219A37600001FC3BF /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 281AA7E019A37600001FC3BF /* iTunesArtwork@2x.png */; };
 		285BDEB01992C4ED00917136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BDEAF1992C4ED00917136 /* AppDelegate.swift */; };
 		285BDEB21992C4ED00917136 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BDEB11992C4ED00917136 /* FirstViewController.swift */; };
 		285BDEB41992C4ED00917136 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BDEB31992C4ED00917136 /* SecondViewController.swift */; };
@@ -28,7 +43,22 @@
 
 /* Begin PBXFileReference section */
 		280E2AA5199A9C5000D8E93A /* StatusHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusHandler.swift; sourceTree = "<group>"; };
-		285BDEAA1992C4ED00917136 /* MainFrameStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainFrameStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		281AA7C119A374BF001FC3BF /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		281AA7C219A374BF001FC3BF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		281AA7C319A374BF001FC3BF /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		281AA7C419A374BF001FC3BF /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		281AA7C519A374BF001FC3BF /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		281AA7C619A374BF001FC3BF /* Icon-iPad-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		281AA7C719A374BF001FC3BF /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		281AA7C819A374BF001FC3BF /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		281AA7C919A374BF001FC3BF /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		281AA7CA19A374BF001FC3BF /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
+		281AA7CB19A374BF001FC3BF /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		281AA7CC19A374BF001FC3BF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		281AA7CD19A374BF001FC3BF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		281AA7DF19A37600001FC3BF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		281AA7E019A37600001FC3BF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		285BDEAA1992C4ED00917136 /* MainFrameStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MainFrameStatus.app; path = MainFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285BDEAE1992C4ED00917136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285BDEAF1992C4ED00917136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285BDEB11992C4ED00917136 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281AA7A019A3633C001FC3BF /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+				281AA7C119A374BF001FC3BF /* Icon-72.png */,
+				281AA7C219A374BF001FC3BF /* Icon-72@2x.png */,
+				281AA7C319A374BF001FC3BF /* Icon-76.png */,
+				281AA7C419A374BF001FC3BF /* Icon-76@2x.png */,
+				281AA7C519A374BF001FC3BF /* Icon-120.png */,
+				281AA7C619A374BF001FC3BF /* Icon-iPad-Spotlight-iOS7@2x.png */,
+				281AA7C719A374BF001FC3BF /* Icon-Small-50.png */,
+				281AA7C819A374BF001FC3BF /* Icon-Small.png */,
+				281AA7C919A374BF001FC3BF /* Icon-Small@2x.png */,
+				281AA7CA19A374BF001FC3BF /* Icon-Spotlight-iOS7.png */,
+				281AA7CB19A374BF001FC3BF /* Icon-Spotlight-iOS7@2x.png */,
+				281AA7CC19A374BF001FC3BF /* Icon.png */,
+				281AA7CD19A374BF001FC3BF /* Icon@2x.png */,
+				281AA7DF19A37600001FC3BF /* iTunesArtwork.png */,
+				281AA7E019A37600001FC3BF /* iTunesArtwork@2x.png */,
+			);
+			path = "App Icon";
+			sourceTree = "<group>";
+		};
 		285BDEA11992C4ED00917136 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +145,7 @@
 		285BDEAD1992C4ED00917136 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				281AA7A019A3633C001FC3BF /* App Icon */,
 				285BDEAE1992C4ED00917136 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -118,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		285BDEA91992C4ED00917136 /* MainFrameStatus */ = {
+		285BDEA91992C4ED00917136 /* MainFrame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrameStatus" */;
+			buildConfigurationList = 285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrame" */;
 			buildPhases = (
 				285BDEA61992C4ED00917136 /* Sources */,
 				285BDEA71992C4ED00917136 /* Frameworks */,
@@ -130,7 +183,7 @@
 			);
 			dependencies = (
 			);
-			name = MainFrameStatus;
+			name = MainFrame;
 			productName = MainFrameStatus;
 			productReference = 285BDEAA1992C4ED00917136 /* MainFrameStatus.app */;
 			productType = "com.apple.product-type.application";
@@ -184,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				285BDEA91992C4ED00917136 /* MainFrameStatus */,
+				285BDEA91992C4ED00917136 /* MainFrame */,
 				285BDEBD1992C4ED00917136 /* MainFrameStatusTests */,
 			);
 		};
@@ -195,8 +248,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281AA7D419A374BF001FC3BF /* Icon-120.png in Resources */,
 				285BDEB71992C4ED00917136 /* Main.storyboard in Resources */,
+				281AA7D519A374BF001FC3BF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				281AA7D619A374BF001FC3BF /* Icon-Small-50.png in Resources */,
+				281AA7E219A37600001FC3BF /* iTunesArtwork@2x.png in Resources */,
+				281AA7DC19A374BF001FC3BF /* Icon@2x.png in Resources */,
 				285BDEB91992C4ED00917136 /* Images.xcassets in Resources */,
+				281AA7E119A37600001FC3BF /* iTunesArtwork.png in Resources */,
+				281AA7D219A374BF001FC3BF /* Icon-76.png in Resources */,
+				281AA7D119A374BF001FC3BF /* Icon-72@2x.png in Resources */,
+				281AA7D319A374BF001FC3BF /* Icon-76@2x.png in Resources */,
+				281AA7D719A374BF001FC3BF /* Icon-Small.png in Resources */,
+				281AA7D919A374BF001FC3BF /* Icon-Spotlight-iOS7.png in Resources */,
+				281AA7D019A374BF001FC3BF /* Icon-72.png in Resources */,
+				281AA7D819A374BF001FC3BF /* Icon-Small@2x.png in Resources */,
+				281AA7DB19A374BF001FC3BF /* Icon.png in Resources */,
+				281AA7DA19A374BF001FC3BF /* Icon-Spotlight-iOS7@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		285BDEC01992C4ED00917136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 285BDEA91992C4ED00917136 /* MainFrameStatus */;
+			target = 285BDEA91992C4ED00917136 /* MainFrame */;
 			targetProxy = 285BDEBF1992C4ED00917136 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrameStatus" */ = {
+		285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				285BDEC91992C4ED00917136 /* Debug */,
