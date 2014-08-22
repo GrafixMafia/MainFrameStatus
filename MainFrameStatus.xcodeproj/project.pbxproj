@@ -58,14 +58,14 @@
 		281AA7CD19A374BF001FC3BF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		281AA7DF19A37600001FC3BF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		281AA7E019A37600001FC3BF /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		285BDEAA1992C4ED00917136 /* MainFrameStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MainFrameStatus.app; path = MainFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		285BDEAA1992C4ED00917136 /* SpaceState.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceState.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285BDEAE1992C4ED00917136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285BDEAF1992C4ED00917136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285BDEB11992C4ED00917136 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		285BDEB31992C4ED00917136 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		285BDEB61992C4ED00917136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		285BDEB81992C4ED00917136 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		285BDEBE1992C4ED00917136 /* MainFrameStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainFrameStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		285BDEBE1992C4ED00917136 /* SpaceStateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceStateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		285BDEC31992C4ED00917136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285BDEC41992C4ED00917136 /* MainFrameStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameStatusTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +122,8 @@
 		285BDEAB1992C4ED00917136 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				285BDEAA1992C4ED00917136 /* MainFrameStatus.app */,
-				285BDEBE1992C4ED00917136 /* MainFrameStatusTests.xctest */,
+				285BDEAA1992C4ED00917136 /* SpaceState.app */,
+				285BDEBE1992C4ED00917136 /* SpaceStateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		285BDEA91992C4ED00917136 /* MainFrame */ = {
+		285BDEA91992C4ED00917136 /* spacestate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrame" */;
+			buildConfigurationList = 285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "spacestate" */;
 			buildPhases = (
 				285BDEA61992C4ED00917136 /* Sources */,
 				285BDEA71992C4ED00917136 /* Frameworks */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = MainFrame;
+			name = spacestate;
 			productName = MainFrameStatus;
-			productReference = 285BDEAA1992C4ED00917136 /* MainFrameStatus.app */;
+			productReference = 285BDEAA1992C4ED00917136 /* SpaceState.app */;
 			productType = "com.apple.product-type.application";
 		};
-		285BDEBD1992C4ED00917136 /* MainFrameStatusTests */ = {
+		285BDEBD1992C4ED00917136 /* SpaceStateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 285BDECB1992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrameStatusTests" */;
+			buildConfigurationList = 285BDECB1992C4ED00917136 /* Build configuration list for PBXNativeTarget "SpaceStateTests" */;
 			buildPhases = (
 				285BDEBA1992C4ED00917136 /* Sources */,
 				285BDEBB1992C4ED00917136 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				285BDEC01992C4ED00917136 /* PBXTargetDependency */,
 			);
-			name = MainFrameStatusTests;
+			name = SpaceStateTests;
 			productName = MainFrameStatusTests;
-			productReference = 285BDEBE1992C4ED00917136 /* MainFrameStatusTests.xctest */;
+			productReference = 285BDEBE1992C4ED00917136 /* SpaceStateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -237,8 +237,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				285BDEA91992C4ED00917136 /* MainFrame */,
-				285BDEBD1992C4ED00917136 /* MainFrameStatusTests */,
+				285BDEA91992C4ED00917136 /* spacestate */,
+				285BDEBD1992C4ED00917136 /* SpaceStateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		285BDEC01992C4ED00917136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 285BDEA91992C4ED00917136 /* MainFrame */;
+			target = 285BDEA91992C4ED00917136 /* spacestate */;
 			targetProxy = 285BDEBF1992C4ED00917136 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrame" */ = {
+		285BDEC81992C4ED00917136 /* Build configuration list for PBXNativeTarget "spacestate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				285BDEC91992C4ED00917136 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		285BDECB1992C4ED00917136 /* Build configuration list for PBXNativeTarget "MainFrameStatusTests" */ = {
+		285BDECB1992C4ED00917136 /* Build configuration list for PBXNativeTarget "SpaceStateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				285BDECC1992C4ED00917136 /* Debug */,
