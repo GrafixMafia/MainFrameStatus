@@ -1,24 +1,27 @@
-# MainFrameStatus
-Disclaimer: this application is still under construction!
-
+# MainFrameStatusBar
+Disclaimer: this application is still under construction! The main function, showing the space status works well, but many features are not working. This is an alpha version! 
 ## About
-This is a small iOS application that will show the status of a hackspace. You can choose from a list of hackspaces that supoort [SpaceApi](https://github.com/spaceapi). The main focus is to show the status: 
-
+This is a small Mac OSX Menu application that will show the status of the hackspace mainframe located in oldenburg. 
+    
 - O is for Open
 - C is for Closed
-- X is for Unknown state (no connection) 
+- X is for Unknown state (no connection)
+
+The api and site source can be found here:    
+[https://github.com/spaceapi](https://github.com/spaceapi)   
 
 This application is written int the swift programming language and is attended to be a test project. 
 
-# Todo 
+## Todos 
+Some features are still in progress
+- display more details given by space api 
+- cache data requested data  and store settings 
+- Build a push notification service (work in progress)
+- make use of iOS 8 Features (e.g. notification center)
 
-- design settings view
-- design details view
-- design about view
-- handle state
-- backround updates
-- pull to refresh
-- push notification service
+# Credits
+The icon is made with the help of
+[AppIconTemplate.com](http://appicontemplate.com)
 
 # License
 
