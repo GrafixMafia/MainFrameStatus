@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280173581AC0A5D400840908 /* StatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D36EE1A03956E00D6A3A1 /* StatusHandler.swift */; };
+		280173591AC0A62A00840908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695819A92A1F001FA4CA /* AppDelegate.swift */; };
+		2801735A1AC0A62A00840908 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695A19A92A1F001FA4CA /* FirstViewController.swift */; };
+		2801735B1AC0A62A00840908 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695C19A92A1F001FA4CA /* SecondViewController.swift */; };
 		284D36EF1A03956E00D6A3A1 /* StatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D36EE1A03956E00D6A3A1 /* StatusHandler.swift */; };
 		288C695919A92A1F001FA4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695819A92A1F001FA4CA /* AppDelegate.swift */; };
 		288C695B19A92A1F001FA4CA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695A19A92A1F001FA4CA /* FirstViewController.swift */; };
@@ -328,7 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280173591AC0A62A00840908 /* AppDelegate.swift in Sources */,
+				280173581AC0A5D400840908 /* StatusHandler.swift in Sources */,
 				288C696E19A92A1F001FA4CA /* spacestateTests.swift in Sources */,
+				2801735B1AC0A62A00840908 /* SecondViewController.swift in Sources */,
+				2801735A1AC0A62A00840908 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
