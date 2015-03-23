@@ -10,10 +10,15 @@ import UIKit
 import XCTest
 
 class spacestateTests: XCTestCase {
+
+    internal var myStatus: StatusHandler?
+    internal var statusString: NSString?
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        myStatus = StatusHandler()
+        statusString = myStatus?.getStatus()
     }
     
     override func tearDown() {
@@ -24,7 +29,12 @@ class spacestateTests: XCTestCase {
     func testExample() {
 
         var myStatus = StatusHandler()
-        XCTAssert(myStatus.getStatus().length > 0, "Pass")
+        XCTAssert(statusString?.length > 0, "Pass")
+    }
+    
+    func testExample2() {
+        var myStatus = StatusHandler()
+        XCTAssert(statusString == "X" || statusString == "C" || statusString == "O", "Pass")
     }
     
     func testPerformanceExample() {
