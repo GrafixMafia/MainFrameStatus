@@ -19,7 +19,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         statusHandler = StatusHandler()
         
-        status.text = statusHandler?.getStatus()
+        status.text = statusHandler!.getStatus() as String
     }
     
     override func didReceiveMemoryWarning() {

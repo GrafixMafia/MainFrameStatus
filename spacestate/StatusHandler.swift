@@ -16,14 +16,14 @@ public class StatusHandler {
     
     public var stateDetails: NSDictionary?
     
-    public var status: NSString? {
+    public var status: String? {
         get {
-            return self.getStatus()
+            return self.getStatus() as String
         }
     }
     
-    func getStatus() -> NSString {
-        var freshStatus: NSString = ""
+    func getStatus() -> String {
+        var freshStatus: String = ""
         
         let urlPath: String = "http://status.kreativitaet-trifft-technik.de/api/openState"
         var url: NSURL = NSURL(string: urlPath)!
@@ -43,7 +43,7 @@ public class StatusHandler {
             
             var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(dataVal!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
             
-            if(jsonResult.valueForKey("state") as! NSString == "off") {
+            if(jsonResult.valueForKey("state") as! String == "off") {
                 freshStatus = "C"
             } else {
                 freshStatus = "O"
@@ -53,7 +53,7 @@ public class StatusHandler {
         return freshStatus
     }
     
-    func getDetails(urlToSpace : NSString) {
+    func getDetails(urlToSpace : String) {
         var freshDetails : NSDictionary = NSDictionary()
         
         // var urlPathToSpace: String = "http://status.mainframe.io/api/spaceInfo"
