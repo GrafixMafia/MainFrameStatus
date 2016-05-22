@@ -27,20 +27,17 @@ class spacestateTests: XCTestCase {
     }
     
     func testExample() {
-
-        var myStatus = StatusHandler()
         XCTAssert(statusString?.length > 0, "Pass")
     }
     
     func testExample2() {
-        var myStatus = StatusHandler()
         XCTAssert(statusString == "X" || statusString == "C" || statusString == "O", "Pass")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
-            var myStatus = StatusHandler()
+            
         }
     }
     

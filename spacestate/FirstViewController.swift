@@ -18,7 +18,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         statusHandler = StatusHandler()
 
-        status.text = statusHandler?.getStatus()
+        status.text = statusHandler!.getStatus()
     }
     
     override func didReceiveMemoryWarning() {

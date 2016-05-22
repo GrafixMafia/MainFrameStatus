@@ -15,6 +15,8 @@ public class StatusHandler {
     }
     
     public var stateDetails: NSDictionary?
+    private var data:NSString?
+    private var rData:NSData?
     
     public var status: NSString? {
         get {
@@ -22,57 +24,75 @@ public class StatusHandler {
         }
     }
     
-    func getStatus() -> NSString {
-        var freshStatus: NSString = ""
+    func getStatus() -> String {
+        var freshStatus: String = ""
         
-        let urlPath: String = "http://status.kreativitaet-trifft-technik.de/api/openState"
-        var url: NSURL = NSURL(string: urlPath)!
-        var request1: NSURLRequest = NSURLRequest(URL: url)
+        let urlPath: String = "https://status.kreativitaet-trifft-technik.de/api/openState"
+        
+        let url: NSURL = NSURL(string: urlPath)!
+        let request1: NSURLRequest = NSURLRequest(URL: url)
         
         var response: NSURLResponse?
         var error: NSError?
         
         var dataVal: NSData?
         
-        dataVal =  NSURLConnection.sendSynchronousRequest(request1, returningResponse: &response, error: &error)
+        do {
+            dataVal =  try NSURLConnection.sendSynchronousRequest(request1, returningResponse: &response)
+        } catch let error1 as NSError {
+            error = error1
+            dataVal = nil
+        }
         
-        if let myError = error {
+        if let _ = error {
             freshStatus = "X"
         } else {
-            var err: NSError
-            
-            var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(dataVal!, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-            
-            if(jsonResult.valueForKey("state") as! NSString == "off") {
-                freshStatus = "C"
-            } else {
-                freshStatus = "O"
+            var jsonResult:NSDictionary?
+            do {
+                jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
+                if let jsonSpaceResult = jsonResult?.valueForKey("space") {
+                    if let thisState = jsonSpaceResult.valueForKey("state") {
+                        if thisState as! String == "off" {
+                            freshStatus = "C"
+                        } else {
+                            freshStatus = "O"
+                        }
+                    } else {
+                        freshStatus = "X"
+                    }
+                }
+            } catch _ as NSError {
+                freshStatus = "X"
             }
             
         }
         return freshStatus
     }
     
-    func getDetails(urlToSpace : NSString) {
-        var freshDetails : NSDictionary = NSDictionary()
-        
-        // var urlPathToSpace: String = "http://status.mainframe.io/api/spaceInfo"
-        var url: NSURL = NSURL(string: urlToSpace as String)!
-        var request1: NSURLRequest = NSURLRequest(URL: url)
+    func getDetails(urlToSpace : String) {
+        stateDetails = parseJSON(getJSON(urlToSpace))
+    }
+    
+    func getJSON(urlToRequest: String) -> NSData{
+        let urlPath: String = urlToRequest
+        let url: NSURL = NSURL(string: urlPath)!
+        let request: NSURLRequest = NSURLRequest(URL: url)
         let queue:NSOperationQueue = NSOperationQueue()
-        
-        var stateDetails : NSDictionary = NSDictionary()
-        NSURLConnection.sendAsynchronousRequest(request1, queue: queue, completionHandler:{ (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue) { (response: NSURLResponse?, data: NSData?, error: NSError?) in
+            self.rData = data!
             
-            var err: NSError?
-            
-            if let myerror : NSError = error {
-                self.stateDetails = NSDictionary()
-            } else {
-                self.stateDetails = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary
-                println("Status")
-                // println(freshDetails)
-            }
-        })
+        }
+        return rData!
+    }
+    
+    func parseJSON(inputData: NSData) -> NSDictionary{
+        var jsonResult:NSDictionary?
+        do {
+            jsonResult = try NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
+            print(jsonResult)
+        } catch let error as NSError {
+            print(error)
+        }
+        return jsonResult!
     }
 }

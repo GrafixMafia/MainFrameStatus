@@ -11,14 +11,6 @@
 		280173591AC0A62A00840908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695819A92A1F001FA4CA /* AppDelegate.swift */; };
 		2801735A1AC0A62A00840908 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695A19A92A1F001FA4CA /* FirstViewController.swift */; };
 		2801735B1AC0A62A00840908 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695C19A92A1F001FA4CA /* SecondViewController.swift */; };
-		28440AFF1B15196A00D6A3A1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440AFE1B15196A00D6A3A1 /* InterfaceController.swift */; };
-		28440B011B15196A00D6A3A1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B001B15196A00D6A3A1 /* NotificationController.swift */; };
-		28440B031B15196A00D6A3A1 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28440B021B15196A00D6A3A1 /* GlanceController.swift */; };
-		28440B051B15196A00D6A3A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28440B041B15196A00D6A3A1 /* Images.xcassets */; };
-		28440B091B15196A00D6A3A1 /* spacestate WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 28440B081B15196A00D6A3A1 /* spacestate WatchKit App.app */; };
-		28440B111B15196A00D6A3A1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28440B0F1B15196A00D6A3A1 /* Interface.storyboard */; };
-		28440B131B15196A00D6A3A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28440B121B15196A00D6A3A1 /* Images.xcassets */; };
-		28440B161B15196A00D6A3A1 /* spacestate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 28440AF91B15196A00D6A3A1 /* spacestate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		284D36EF1A03956E00D6A3A1 /* StatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D36EE1A03956E00D6A3A1 /* StatusHandler.swift */; };
 		288C695919A92A1F001FA4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695819A92A1F001FA4CA /* AppDelegate.swift */; };
 		288C695B19A92A1F001FA4CA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288C695A19A92A1F001FA4CA /* FirstViewController.swift */; };
@@ -34,20 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		28440B0A1B15196A00D6A3A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 288C694B19A92A1F001FA4CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28440B071B15196A00D6A3A1;
-			remoteInfo = "spacestate WatchKit App";
-		};
-		28440B141B15196A00D6A3A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 288C694B19A92A1F001FA4CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28440AF81B15196A00D6A3A1;
-			remoteInfo = "spacestate WatchKit Extension";
-		};
 		288C696819A92A1F001FA4CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 288C694B19A92A1F001FA4CA /* Project object */;
@@ -71,26 +49,25 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				28440B161B15196A00D6A3A1 /* spacestate WatchKit Extension.appex in Embed App Extensions */,
 				2896F1D41A02851200D6A3A1 /* state.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B5B9581BA4814200D6A3A1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28440AF91B15196A00D6A3A1 /* spacestate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "spacestate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28440AFC1B15196A00D6A3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28440AFD1B15196A00D6A3A1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		28440AFE1B15196A00D6A3A1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		28440B001B15196A00D6A3A1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		28440B021B15196A00D6A3A1 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		28440B041B15196A00D6A3A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28440B081B15196A00D6A3A1 /* spacestate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spacestate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28440B0E1B15196A00D6A3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28440B101B15196A00D6A3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		28440B121B15196A00D6A3A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		284D36EE1A03956E00D6A3A1 /* StatusHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusHandler.swift; sourceTree = "<group>"; };
 		288C695319A92A1F001FA4CA /* spacestate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spacestate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288C695719A92A1F001FA4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,53 +120,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28440AFA1B15196A00D6A3A1 /* spacestate WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				28440AFE1B15196A00D6A3A1 /* InterfaceController.swift */,
-				28440B001B15196A00D6A3A1 /* NotificationController.swift */,
-				28440B021B15196A00D6A3A1 /* GlanceController.swift */,
-				28440B041B15196A00D6A3A1 /* Images.xcassets */,
-				28440AFB1B15196A00D6A3A1 /* Supporting Files */,
-			);
-			path = "spacestate WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		28440AFB1B15196A00D6A3A1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				28440AFC1B15196A00D6A3A1 /* Info.plist */,
-				28440AFD1B15196A00D6A3A1 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		28440B0C1B15196A00D6A3A1 /* spacestate WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				28440B0F1B15196A00D6A3A1 /* Interface.storyboard */,
-				28440B121B15196A00D6A3A1 /* Images.xcassets */,
-				28440B0D1B15196A00D6A3A1 /* Supporting Files */,
-			);
-			path = "spacestate WatchKit App";
-			sourceTree = "<group>";
-		};
-		28440B0D1B15196A00D6A3A1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				28440B0E1B15196A00D6A3A1 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		288C694A19A92A1F001FA4CA = {
 			isa = PBXGroup;
 			children = (
 				288C695519A92A1F001FA4CA /* spacestate */,
 				288C696A19A92A1F001FA4CA /* spacestateTests */,
 				2896F1CA1A02851200D6A3A1 /* state */,
-				28440AFA1B15196A00D6A3A1 /* spacestate WatchKit Extension */,
-				28440B0C1B15196A00D6A3A1 /* spacestate WatchKit App */,
 				2896F1C71A02851200D6A3A1 /* Frameworks */,
 				288C695419A92A1F001FA4CA /* Products */,
 			);
@@ -202,7 +138,6 @@
 				288C696719A92A1F001FA4CA /* spacestateTests.xctest */,
 				2896F1C61A02851200D6A3A1 /* state.appex */,
 				28440AF91B15196A00D6A3A1 /* spacestate WatchKit Extension.appex */,
-				28440B081B15196A00D6A3A1 /* spacestate WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,27 +222,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				28440B0B1B15196A00D6A3A1 /* PBXTargetDependency */,
 			);
 			name = "spacestate WatchKit Extension";
 			productName = "spacestate WatchKit Extension";
 			productReference = 28440AF91B15196A00D6A3A1 /* spacestate WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		28440B071B15196A00D6A3A1 /* spacestate WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28440B1B1B15196A00D6A3A1 /* Build configuration list for PBXNativeTarget "spacestate WatchKit App" */;
-			buildPhases = (
-				28440B061B15196A00D6A3A1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "spacestate WatchKit App";
-			productName = "spacestate WatchKit App";
-			productReference = 28440B081B15196A00D6A3A1 /* spacestate WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		288C695219A92A1F001FA4CA /* spacestate */ = {
 			isa = PBXNativeTarget;
@@ -317,12 +236,12 @@
 				288C695019A92A1F001FA4CA /* Frameworks */,
 				288C695119A92A1F001FA4CA /* Resources */,
 				2896F1D81A02851200D6A3A1 /* Embed App Extensions */,
+				28B5B9581BA4814200D6A3A1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2896F1D31A02851200D6A3A1 /* PBXTargetDependency */,
-				28440B151B15196A00D6A3A1 /* PBXTargetDependency */,
 			);
 			name = spacestate;
 			productName = spacestate;
@@ -370,20 +289,18 @@
 		288C694B19A92A1F001FA4CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = grafixmafia.net;
 				TargetAttributes = {
 					28440AF81B15196A00D6A3A1 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = JU54TPL9P9;
-					};
-					28440B071B15196A00D6A3A1 = {
-						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = JU54TPL9P9;
+						DevelopmentTeam = 7E3BJ546SA;
 					};
 					288C695219A92A1F001FA4CA = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = JU54TPL9P9;
+						DevelopmentTeam = 7E3BJ546SA;
 					};
 					288C696619A92A1F001FA4CA = {
 						CreatedOnToolsVersion = 6.0;
@@ -391,7 +308,7 @@
 					};
 					2896F1C51A02851200D6A3A1 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = JU54TPL9P9;
+						DevelopmentTeam = 7E3BJ546SA;
 					};
 				};
 			};
@@ -412,7 +329,6 @@
 				288C696619A92A1F001FA4CA /* spacestateTests */,
 				2896F1C51A02851200D6A3A1 /* state */,
 				28440AF81B15196A00D6A3A1 /* spacestate WatchKit Extension */,
-				28440B071B15196A00D6A3A1 /* spacestate WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -422,17 +338,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28440B051B15196A00D6A3A1 /* Images.xcassets in Resources */,
-				28440B091B15196A00D6A3A1 /* spacestate WatchKit App.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28440B061B15196A00D6A3A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28440B111B15196A00D6A3A1 /* Interface.storyboard in Resources */,
-				28440B131B15196A00D6A3A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,9 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28440B011B15196A00D6A3A1 /* NotificationController.swift in Sources */,
-				28440AFF1B15196A00D6A3A1 /* InterfaceController.swift in Sources */,
-				28440B031B15196A00D6A3A1 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,16 +410,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		28440B0B1B15196A00D6A3A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28440B071B15196A00D6A3A1 /* spacestate WatchKit App */;
-			targetProxy = 28440B0A1B15196A00D6A3A1 /* PBXContainerItemProxy */;
-		};
-		28440B151B15196A00D6A3A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28440AF81B15196A00D6A3A1 /* spacestate WatchKit Extension */;
-			targetProxy = 28440B141B15196A00D6A3A1 /* PBXContainerItemProxy */;
-		};
 		288C696919A92A1F001FA4CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 288C695219A92A1F001FA4CA /* spacestate */;
@@ -531,14 +423,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28440B0F1B15196A00D6A3A1 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28440B101B15196A00D6A3A1 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		288C695E19A92A1F001FA4CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -554,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -563,8 +448,13 @@
 				INFOPLIST_FILE = "spacestate WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.grafixmafia.spacestate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -572,53 +462,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "spacestate WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.grafixmafia.spacestate.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		28440B191B15196A00D6A3A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = spacestate_WatchKit_Extension;
-				INFOPLIST_FILE = "spacestate WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		28440B1A1B15196A00D6A3A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				IBSC_MODULE = spacestate_WatchKit_Extension;
-				INFOPLIST_FILE = "spacestate WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -642,6 +499,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -705,10 +563,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = spacestate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -719,10 +580,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = spacestate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -741,6 +605,7 @@
 				);
 				INFOPLIST_FILE = spacestateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacestate.app/spacestate";
 			};
@@ -756,6 +621,7 @@
 				);
 				INFOPLIST_FILE = spacestateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spacestate.app/spacestate";
 			};
@@ -765,6 +631,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -772,7 +640,9 @@
 				INFOPLIST_FILE = state/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.spacestate.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -782,10 +652,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = state/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.grafixmafia.spacestate.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -793,15 +667,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28440B1B1B15196A00D6A3A1 /* Build configuration list for PBXNativeTarget "spacestate WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28440B191B15196A00D6A3A1 /* Debug */,
-				28440B1A1B15196A00D6A3A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		28440B1C1B15196A00D6A3A1 /* Build configuration list for PBXNativeTarget "spacestate WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
