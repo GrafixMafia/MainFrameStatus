@@ -12,14 +12,17 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
 
     @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var radStatus: UILabel!
     
     var statusHandler : StatusHandler?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.preferredContentSize = CGSizeMake(0, 48);
         statusHandler = StatusHandler()
         
-        status.text = statusHandler!.getStatus() as String
+        status.text = statusHandler!.getStatus("space") as String
+        radStatus.text = statusHandler!.getStatus("radstelle") as String
     }
     
     override func didReceiveMemoryWarning() {

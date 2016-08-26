@@ -18,13 +18,8 @@ public class StatusHandler {
     private var data:NSString?
     private var rData:NSData?
     
-    public var status: NSString? {
-        get {
-            return self.getStatus()
-        }
-    }
-    
-    func getStatus() -> String {
+  
+    func getStatus(room: String) -> String {
         var freshStatus: String = ""
         
         let urlPath: String = "https://status.kreativitaet-trifft-technik.de/api/openState"
@@ -50,7 +45,7 @@ public class StatusHandler {
             var jsonResult:NSDictionary?
             do {
                 jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
-                if let jsonSpaceResult = jsonResult?.valueForKey("space") {
+                if let jsonSpaceResult = jsonResult?.valueForKey(room) {
                     if let thisState = jsonSpaceResult.valueForKey("state") {
                         if thisState as! String == "off" {
                             freshStatus = "C"
